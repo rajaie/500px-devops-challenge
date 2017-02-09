@@ -7,6 +7,7 @@
 include_recipe "apt::default"
 include_recipe "roshi_deployment::install_nginx"
 include_recipe "roshi_deployment::install_redis"
+include_recipe "roshi_deployment::install_runit"
 
 cookbook_file '/usr/bin/roshi-server' do
   source 'roshi-server'
