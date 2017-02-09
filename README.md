@@ -1,4 +1,4 @@
 # 500px-devops-challenge
 
-TODO: Enter the cookbook description here.
+Create a minimal Roshi server deployment which sits behind an nginx reverse proxy.
 

@@ -1,12 +1,12 @@
 #
-# Cookbook:: 500px-devops-challenge
+# Cookbook:: roshi_deployment
 # Spec:: default
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
-describe '500px-devops-challenge::default' do
+describe 'roshi_deployment::default' do
   context 'When all attributes are default, on an unspecified platform' do
     let(:chef_run) do
       runner = ChefSpec::ServerRunner.new
