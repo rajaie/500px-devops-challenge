@@ -8,3 +8,10 @@ The following cookbooks are required for running the default recipe:
 - runit
 - redisio
 - nginx
+
+Recipes
+-------
+- default: uploads roshi-server binary and sets up other required services
+- install_nginx: builds and installs nginx
+- install_runit: install runit, supervise and start nginx, redis, and roshi-server processes
+- install_redisio: build and install redis
