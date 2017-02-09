@@ -10,6 +10,10 @@ runit_service "nginx" do
   action [ :enable, :start ]
 end
 
+runit_service "redisio" do
+  action [ :enable, :start ]
+end
+
 runit_service "roshi" do
   action [ :enable, :start ]
 end
