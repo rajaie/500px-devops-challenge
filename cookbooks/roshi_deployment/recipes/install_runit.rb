@@ -6,4 +6,10 @@
 
 include_recipe 'runit::default'
 
-runit_service "nginx"
+runit_service "nginx" do
+  action [ :enable, :start ]
+end
+
+runit_service "roshi" do
+  action [ :enable, :start ]
+end
