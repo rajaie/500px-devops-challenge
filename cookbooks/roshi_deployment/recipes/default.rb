@@ -4,7 +4,10 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
+include_recipe "apt::default"
+include_recipe "roshi_deployment::install_nginx"
 
-file '/tmp/motd' do
-  content 'hello world'
+cookbook_file '/usr/bin/roshi-server' do
+  source 'roshi-server'
+  mode '755'
 end
