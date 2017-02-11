@@ -13,3 +13,8 @@ include_recipe "apt::default"
 include_recipe "roshi_deployment::install_nginx"
 include_recipe "roshi_deployment::install_redis"
 include_recipe "roshi_deployment::install_runit"
+
+# Only allow processes on same host to access roshi-server port
+iptables_rule 'roshi' do
+  lines '-I INPUT -p tcp --dport 6302 ! -s 127.0.0.1 -j REJECT --reject-with tcp-reset'
+end
