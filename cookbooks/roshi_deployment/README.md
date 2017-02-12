@@ -10,6 +10,8 @@ The following cookbooks are required for running the default recipe:
 - runit
 - redisio
 - nginx
+- iptables
+- apt
 
 Recipes
 -------
