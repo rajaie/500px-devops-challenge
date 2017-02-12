@@ -2,7 +2,7 @@
 
 Create a minimal Roshi server deployment which sits behind an nginx reverse proxy. The Roshi server uses a Redis server running on the same machine and connects to it through (localhost:6379).
 
-A firewall rule prevents direct access to the roshi-server through any host other than 127.0.0.1 (localhost). Access to Roshi can is possible through nginx (port 80).
+A firewall rule prevents direct access to the roshi-server through any host other than 127.0.0.1 (localhost). Access to Roshi is possible through nginx (port 80).
 
 Requirements
 ------------
